@@ -1,0 +1,2480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1316</width>
+    <height>705</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">    color: #eff0f1;
+    background-color: #31363b;
+    selection-background-color:#3daee9;
+    selection-color: #eff0f1;
+    background-clip: border;
+    border-image: none;
+    outline: 0;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">background: rgb(68, 68, 68);
+color: rgb(220, 220, 220);</string>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>59</x>
+      <y>14</y>
+      <width>1241</width>
+      <height>662</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane { 
+border: 1.5px solid rgb(36, 36, 36); 
+}	
+
+QTabWidget {
+        border: 1px solid rgb(36, 36, 36);
+}
+
+QTabBar::tab {
+        color:rgb(220, 220, 220);
+        background: rgb(100, 100, 100);
+        min-width:100px;
+        min-height:25px;
+        border: 1px solid rgb(36, 36, 36); 
+}
+
+QTabBar::tab:hover {
+        background: rgb(82, 82, 82);
+}
+
+QTabBar::tab:selected {
+        color: white;
+        background: rgb(82, 82, 82);
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <attribute name="title">
+      <string>车辆控制</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>3</y>
+        <width>737</width>
+        <height>622</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+  border: 1.5px solid rgb(36, 36, 36);
+}
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QTabWidget" name="tabWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>234</x>
+         <y>3</y>
+         <width>236</width>
+         <height>58</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTabBar::tab {
+min-width:80px;
+min-height:20px;
+}	
+QTabBar::tab {
+        color:rgb(220, 220, 220);
+        background: rgb(100, 100, 100);
+}
+
+QTabBar::tab:hover {
+        background: rgb(82, 82, 82);
+}
+
+QTabBar::tab:selected {
+        color: white;
+        background: rgb(82, 82, 82);
+}</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>基本操作</string>
+        </attribute>
+        <widget class="QComboBox" name="comboBox">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>5</y>
+           <width>222</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>隶书</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>循环次数</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>移动</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>旋转</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>顶升</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>下降</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>充电</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>退出充电</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>重启642</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>顶升前确认</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>顶升后确认</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>微移动</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>微转向</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DeBug</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>货架换向</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>获得下位机里程</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>获得下位机版本号</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Suspend">
+       <property name="geometry">
+        <rect>
+         <x>418</x>
+         <y>568</y>
+         <width>102</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>102</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>102</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:enabled {
+        background: rgb(82, 82, 82);
+}
+QPushButton:enabled:hover{
+        background: rgb(100, 100, 100);
+}
+QPushButton:enabled:pressed{
+        background: rgb(56, 56, 56);
+}</string>
+       </property>
+       <property name="text">
+        <string>暂停</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Run">
+       <property name="geometry">
+        <rect>
+         <x>185</x>
+         <y>568</y>
+         <width>102</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>102</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>102</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton:enabled {
+        background: rgb(82, 82, 82);
+}
+QPushButton:enabled:hover{
+        background: rgb(100, 100, 100);
+}
+QPushButton:enabled:pressed{
+        background: rgb(56, 56, 56);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>运行</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Stop">
+       <property name="geometry">
+        <rect>
+         <x>301</x>
+         <y>567</y>
+         <width>102</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>102</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>102</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:enabled {
+        background: rgb(82, 82, 82);
+}
+QPushButton:enabled:hover{
+        background: rgb(100, 100, 100);
+}
+QPushButton:enabled:pressed{
+        background: rgb(56, 56, 56);
+}</string>
+       </property>
+       <property name="text">
+        <string>停止</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>234</x>
+         <y>130</y>
+         <width>236</width>
+         <height>409</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Add_Cmd">
+       <property name="geometry">
+        <rect>
+         <x>232</x>
+         <y>77</y>
+         <width>102</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>102</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>102</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:enabled {
+        background: rgb(82, 82, 82);
+}
+QPushButton:enabled:hover{
+        background: rgb(100, 100, 100);
+}
+QPushButton:enabled:pressed{
+        background: rgb(56, 56, 56);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Clear">
+       <property name="geometry">
+        <rect>
+         <x>369</x>
+         <y>77</y>
+         <width>102</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>102</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>102</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:enabled {
+        background: rgb(82, 82, 82);
+}
+QPushButton:enabled:hover{
+        background: rgb(100, 100, 100);
+}
+QPushButton:enabled:pressed{
+        background: rgb(56, 56, 56);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>清除</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QToolBox" name="toolBox">
+      <property name="geometry">
+       <rect>
+        <x>774</x>
+        <y>1</y>
+        <width>460</width>
+        <height>537</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>460</width>
+         <height>485</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>基础信息</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>80</y>
+          <width>459</width>
+          <height>218</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+  border: 1.5px solid rgb(36, 36, 36);
+}
+
+
+</string>
+        </property>
+        <property name="title">
+         <string>DSP反馈面板</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <widget class="QLabel" name="label_58">
+         <property name="geometry">
+          <rect>
+           <x>14</x>
+           <y>108</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>左右负载差</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_52">
+         <property name="geometry">
+          <rect>
+           <x>172</x>
+           <y>50</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>车辆速度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_56">
+         <property name="geometry">
+          <rect>
+           <x>322</x>
+           <y>106</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>障碍距离</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_48">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>50</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>反馈Y坐标</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_201">
+         <property name="geometry">
+          <rect>
+           <x>322</x>
+           <y>136</y>
+           <width>50</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>当前指令</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_96">
+         <property name="geometry">
+          <rect>
+           <x>14</x>
+           <y>164</y>
+           <width>49</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>电池电量</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_47">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>20</y>
+           <width>60</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>反馈X坐标</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_51">
+         <property name="geometry">
+          <rect>
+           <x>172</x>
+           <y>20</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>反馈角度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_55">
+         <property name="geometry">
+          <rect>
+           <x>322</x>
+           <y>21</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>托盘角度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_57">
+         <property name="geometry">
+          <rect>
+           <x>322</x>
+           <y>50</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>托盘高度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_95">
+         <property name="geometry">
+          <rect>
+           <x>14</x>
+           <y>136</y>
+           <width>49</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>电池电压</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_198">
+         <property name="geometry">
+          <rect>
+           <x>322</x>
+           <y>164</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>运动状态</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_200">
+         <property name="geometry">
+          <rect>
+           <x>322</x>
+           <y>190</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>导航模式</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_49">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>80</y>
+           <width>60</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>左侧负载率</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_53">
+         <property name="geometry">
+          <rect>
+           <x>161</x>
+           <y>80</y>
+           <width>60</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>右侧负载率</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_59">
+         <property name="geometry">
+          <rect>
+           <x>312</x>
+           <y>80</y>
+           <width>63</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>顶升负载率</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_61">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>110</y>
+           <width>64</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>左右负载差</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_202">
+         <property name="geometry">
+          <rect>
+           <x>172</x>
+           <y>164</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>左侧电流</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_203">
+         <property name="geometry">
+          <rect>
+           <x>172</x>
+           <y>136</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>右侧电流</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_204">
+         <property name="geometry">
+          <rect>
+           <x>172</x>
+           <y>190</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>顶升电流</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_DSP_X">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>18</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_DSP_Y">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>48</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_DSP_H">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>18</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_AgvSpeed">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>48</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_ElectricQuantity">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>162</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_PodaAngle">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>18</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_PodHeight">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>48</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_BarrierAngle">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>106</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_PresentInstruction">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>134</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_BarrierDistance">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>106</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_battery_voltage">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>134</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_LeftLoadRate">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>78</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_RightLoadRate">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>78</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_LiftupLoadRate">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>78</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_LeftRightLoadRate">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>106</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_LeftCurrent">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>162</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_RightCurrent">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>134</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_LiftupCurrent">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>188</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_205">
+         <property name="geometry">
+          <rect>
+           <x>14</x>
+           <y>190</y>
+           <width>48</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>放电电流</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_MotionStatus">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>162</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_Battery_Current">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>188</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_NavigationMode">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>188</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_DownCameraInformation">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>304</y>
+          <width>459</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+  border: 1.5px solid rgb(36, 36, 36);
+}</string>
+        </property>
+        <property name="title">
+         <string>下视摄像头反馈</string>
+        </property>
+        <widget class="QLabel" name="labelEdit_642_H">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>70</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_642_X">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>18</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_642_Y">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>44</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_Last_X">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>18</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_Last_Y">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>44</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_DeltaX">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>18</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_DeltaY">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>44</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_DeltaH">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>70</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_63">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>68</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>角度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_80">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>18</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>反馈X坐标</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_81">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>43</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>反馈Y坐标</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_82">
+         <property name="geometry">
+          <rect>
+           <x>161</x>
+           <y>18</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>上次X坐标</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_LastY">
+         <property name="geometry">
+          <rect>
+           <x>161</x>
+           <y>43</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>上次Y坐标</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_84">
+         <property name="geometry">
+          <rect>
+           <x>322</x>
+           <y>18</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>DeltaX</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_85">
+         <property name="geometry">
+          <rect>
+           <x>322</x>
+           <y>43</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>DeltaY</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_DeltaH">
+         <property name="geometry">
+          <rect>
+           <x>161</x>
+           <y>68</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>DeltaH</string>
+         </property>
+        </widget>
+        <zorder>label_63</zorder>
+        <zorder>label_80</zorder>
+        <zorder>label_81</zorder>
+        <zorder>label_82</zorder>
+        <zorder>label_LastY</zorder>
+        <zorder>label_84</zorder>
+        <zorder>label_85</zorder>
+        <zorder>label_DeltaH</zorder>
+        <zorder>labelEdit_642_X</zorder>
+        <zorder>labelEdit_642_Y</zorder>
+        <zorder>labelEdit_Last_X</zorder>
+        <zorder>labelEdit_Last_Y</zorder>
+        <zorder>labelEdit_DeltaX</zorder>
+        <zorder>labelEdit_DeltaY</zorder>
+        <zorder>labelEdit_DeltaH</zorder>
+        <zorder>labelEdit_642_H</zorder>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_UpCameraInformation">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>410</y>
+          <width>459</width>
+          <height>73</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+  border: 1.5px solid rgb(36, 36, 36);
+}</string>
+        </property>
+        <property name="title">
+         <string>上视摄像头反馈</string>
+        </property>
+        <widget class="QLabel" name="label_87">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>16</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>货架号</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_88">
+         <property name="geometry">
+          <rect>
+           <x>161</x>
+           <y>40</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>反馈X坐标</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_89">
+         <property name="geometry">
+          <rect>
+           <x>161</x>
+           <y>16</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>反馈Y坐标</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_90">
+         <property name="geometry">
+          <rect>
+           <x>322</x>
+           <y>16</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>货架角度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_91">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>41</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>货位面</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_ShelfNumber">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>16</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_Shelf_X">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>42</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_Shelf_Y">
+         <property name="geometry">
+          <rect>
+           <x>222</x>
+           <y>16</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_Shelf_H">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>16</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_ShelfFace">
+         <property name="geometry">
+          <rect>
+           <x>66</x>
+           <y>42</y>
+           <width>80</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>5</y>
+          <width>458</width>
+          <height>69</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+  border: 1.5px solid rgb(36, 36, 36);
+}
+QLabel {
+  background: rgb(82, 82, 82);
+
+}</string>
+        </property>
+        <property name="title">
+         <string>信号面板</string>
+        </property>
+        <widget class="QLabel" name="label_Command_Mode">
+         <property name="geometry">
+          <rect>
+           <x>248</x>
+           <y>40</y>
+           <width>129</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);
+</string>
+         </property>
+         <property name="text">
+          <string>命令执行完成</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_salver">
+         <property name="geometry">
+          <rect>
+           <x>142</x>
+           <y>40</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36); </string>
+         </property>
+         <property name="text">
+          <string>托盘限位未确认</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_gyroscope">
+         <property name="geometry">
+          <rect>
+           <x>6</x>
+           <y>40</y>
+           <width>128</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36); </string>
+         </property>
+         <property name="text">
+          <string>陀螺仪零偏纠正未完成</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>326</x>
+           <y>16</y>
+           <width>50</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36); </string>
+         </property>
+         <property name="text">
+          <string>正常帧</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_shelves">
+         <property name="geometry">
+          <rect>
+           <x>61</x>
+           <y>16</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36); </string>
+         </property>
+         <property name="text">
+          <string>载有货架</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_Motor_switch">
+         <property name="geometry">
+          <rect>
+           <x>131</x>
+           <y>16</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36); </string>
+         </property>
+         <property name="text">
+          <string>电机开启</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_code">
+         <property name="geometry">
+          <rect>
+           <x>6</x>
+           <y>16</y>
+           <width>51</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36); </string>
+         </property>
+         <property name="text">
+          <string>在码上</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_17">
+         <property name="geometry">
+          <rect>
+           <x>206</x>
+           <y>16</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36); </string>
+         </property>
+         <property name="text">
+          <string>货架正常</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_18">
+         <property name="geometry">
+          <rect>
+           <x>272</x>
+           <y>16</y>
+           <width>50</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36); </string>
+         </property>
+         <property name="text">
+          <string>未休眠</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>40</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36); </string>
+         </property>
+         <property name="text">
+          <string>捕获异常</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_AGV_PodSensor">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>16</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);</string>
+         </property>
+         <property name="text">
+          <string>电池状态</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>460</width>
+         <height>485</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>版本信息</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_SoftwareVersion">
+        <property name="geometry">
+         <rect>
+          <x>1</x>
+          <y>5</y>
+          <width>224</width>
+          <height>126</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+  border: 1.5px solid rgb(36, 36, 36);
+}</string>
+        </property>
+        <property name="title">
+         <string>下位机软件版本号</string>
+        </property>
+        <widget class="QLabel" name="label_101">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>24</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>DSP版本号</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_102">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>48</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>STM32版本号：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_103">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>74</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>激光雷达</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_104">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>98</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>摄像头</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_DSP">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>24</y>
+           <width>125</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_STM32">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>48</y>
+           <width>125</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_laser">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>74</y>
+           <width>125</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_642">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>98</y>
+           <width>125</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_Mileage_information">
+        <property name="geometry">
+         <rect>
+          <x>234</x>
+          <y>3</y>
+          <width>224</width>
+          <height>129</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+  border: 1.5px solid rgb(36, 36, 36);
+}
+</string>
+        </property>
+        <property name="title">
+         <string>里程信息</string>
+        </property>
+        <widget class="QLabel" name="label_105">
+         <property name="geometry">
+          <rect>
+           <x>16</x>
+           <y>24</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>空载里程</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_108">
+         <property name="geometry">
+          <rect>
+           <x>14</x>
+           <y>98</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>顶升次数</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_107">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>74</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>总里程</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_106">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>48</y>
+           <width>68</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>68</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>带载里程</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_No_Load_Mileage">
+         <property name="geometry">
+          <rect>
+           <x>74</x>
+           <y>24</y>
+           <width>125</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_On_Load_Mileage">
+         <property name="geometry">
+          <rect>
+           <x>74</x>
+           <y>48</y>
+           <width>125</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_mileage">
+         <property name="geometry">
+          <rect>
+           <x>74</x>
+           <y>74</y>
+           <width>125</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelEdit_LiftupCount">
+         <property name="geometry">
+          <rect>
+           <x>74</x>
+           <y>98</y>
+           <width>125</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(36, 36, 36);        background: rgb(82, 82, 82);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_8">
+     <attribute name="title">
+      <string>原始数据</string>
+     </attribute>
+     <widget class="QTextEdit" name="textEdit_data_show">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>5</y>
+        <width>795</width>
+        <height>560</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 78, 161);background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_Clear</sender>
+   <signal>clicked()</signal>
+   <receiver>textEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>505</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>490</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>2</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>2</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>false</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>false</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
