@@ -36,13 +36,11 @@ class MainWindow(QMainWindow, Ui_MainWindow, Ui_Dialog):
     # ==========================================
     @pyqtSlot()
     def on_pushButton_Add_Cmd_clicked(self):
+        self.Dialog = QtWidgets.QDialog()
+        ui = Ui_Dialog()
+        ui.setupUi_2(self.Dialog)
+        self.Dialog.show()
         
-        
-        def move():
-            self.Dialog = QtWidgets.QDialog()
-            ui = Ui_Dialog()
-            ui.setupUi_2(self.Dialog)
-            self.Dialog.show()
         """
        # ==========================================
        # 功能：测试弹出对话框
