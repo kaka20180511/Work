@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>219</width>
-    <height>144</height>
+    <width>223</width>
+    <height>153</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -71,50 +71,57 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_ok">
+  <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>40</x>
      <y>100</y>
-     <width>75</width>
+     <width>156</width>
      <height>23</height>
     </rect>
    </property>
-   <property name="text">
-    <string>确定</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_cancel">
-   <property name="geometry">
-    <rect>
-     <x>120</x>
-     <y>100</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>取消</string>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
  </widget>
  <resources/>
  <connections>
   <connection>
-   <sender>pushButton_cancel</sender>
-   <signal>clicked()</signal>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
    <receiver>Dialog</receiver>
-   <slot>close()</slot>
+   <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>170</x>
+     <x>95</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>137</x>
      <y>110</y>
     </hint>
     <hint type="destinationlabel">
-     <x>206</x>
-     <y>91</y>
+     <x>196</x>
+     <y>131</y>
     </hint>
    </hints>
   </connection>
  </connections>
+ <slots>
+  <signal>123wqa()</signal>
+  <slot>slot1(1234)</slot>
+ </slots>
 </ui>

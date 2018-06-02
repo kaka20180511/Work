@@ -1,0 +1,13 @@
+<RCC>
+  <qresource>
+    <file>study2.jpg</file>
+  </qresource>
+  <qresource prefix="pic">
+    <file>study2.jpg</file>
+    <file>study.jpg</file>
+    <file>cleck.png</file>
+    <file>lg3jpg.jpg</file>
+    <file>run.jpg</file>
+    <file>run2.jpg</file>
+  </qresource>
+</RCC>

@@ -7,7 +7,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import*
 from PyQt5.QtCore import pyqtSlot
-from Ui_Move_Dialog import *
+from Ui_Move_Dialog import Ui_Dialog
 #from Ui_Move_Dialog import *
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMainWindow, QInputDialog
@@ -15,7 +15,7 @@ from PyQt5.QtWidgets import QMainWindow, QInputDialog
 from Ui_Main_Ui_Fault_Diagnosis import Ui_MainWindow
 
 
-class MainWindow(QMainWindow, Ui_MainWindow, Ui_Dialog):
+class MainWindow(QMainWindow, Ui_MainWindow):
 
     """
     Class documentation goes here.
@@ -35,12 +35,17 @@ class MainWindow(QMainWindow, Ui_MainWindow, Ui_Dialog):
     # 功能：读取用户选择转换命令为脚本并加载到文本框内
     # ==========================================
     @pyqtSlot()
-    def on_pushButton_Add_Cmd_clicked(self):
+    def on_pushButton_Add_Cmd_clicked():
+        dialog = Ui_Dialog(self)
+        result = dialog.exec_()
+        data = dialog.dataTime()
+        print(data)
+        """
         self.Dialog = QtWidgets.QDialog()
         ui = Ui_Dialog()
         ui.setupUi_2(self.Dialog)
         self.Dialog.show()
-        
+        """
         """
        # ==========================================
        # 功能：测试弹出对话框
