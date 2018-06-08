@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project lesson2 -->
-<!-- Saved: 2018-05-31, 09:34:34 -->
+<!-- Saved: 2018-06-01, 10:21:02 -->
 <!-- Copyright (C) 2018 ,  -->
 <Project version="5.1">
   <Language>en_US</Language>
@@ -16,6 +16,7 @@
     <Source>__init__.py</Source>
     <Source>lesson2_10.py</Source>
     <Source>lesson2_11.py</Source>
+    <Source>lesson2_12.py</Source>
     <Source>lesson2_9.py</Source>
   </Sources>
   <Forms/>
